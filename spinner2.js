@@ -2,9 +2,9 @@ let array = ['|', '/', '-', '\\', '|', '/', '-', '\\', '\n' ]
 
 const spin = function(array) {
 let delay = 0;
-for (let i = 0; i < array.length; i++) {
+for (let i of array) {
 setTimeout(() => {
-  process.stdout.write('\r' + array[i]);
+  process.stdout.write('\r' + [i]);
 }, delay += 200);
 }
 }
